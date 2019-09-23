@@ -1,0 +1,63 @@
+.overlaybtns{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@media (orientation: portrait) {
+    .overlaybtns {
+        top: 60%;
+    }
+}
+@media (any-pointer: fine) and (hover:hover) {
+    .overlaybtns{
+        display: none;
+    }
+}
+
+.overlaybtn {
+    background-color: rgba(95, 95, 95, 0.1);
+    position: absolute;
+    outline: none;
+    border: 1px solid rgba(95, 95, 95, 0.2);
+    color: rgba(95, 95, 95, 0.2);
+    font-size: xx-large;
+}
+    .overlaybtn:active {
+        background-color: rgba(95, 95, 95, 0.15);
+    }
+
+.overlaybtn-up{
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    top: 0;
+    bottom: 50%;
+    height: 50%;
+}
+.overlaybtn-down {
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    top: 50%;
+    bottom: 0;
+    height: 50%;
+}
+.overlaybtn-left {
+    left: 0;
+    right: 70%;
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+.overlaybtn-right {
+    left: 70%;
+    right: 0;
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
