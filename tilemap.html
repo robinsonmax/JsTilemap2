@@ -19,11 +19,12 @@
 
     <script>
         //Inputs for tilemap
-        var startPos  = [1, 1];
-        var mapSize = [4, 4];
-        var hex = "8220";
-        var mapInput = parseInt(hex, 16).toString(2)
-        //var mapInput  = "1000001000100000";
+        var startPos  = [2, 2];
+        var mapSize = [5, 5];
+        var hexMap = "4701C0";
+        var mapInput = parseInt(hexMap, 16).toString(2);
+        //Adds exces 0's at the beginning when converted
+        mapInput =  '0'.repeat((mapSize[0] * mapSize[1]) - mapInput.length) + mapInput;
     </script>
     <script src="tilemap.js"></script>
     <script src="temp.js"></script>
